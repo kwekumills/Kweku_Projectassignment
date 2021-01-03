@@ -1,1 +1,0 @@
-# Kweku_Projectassignment
