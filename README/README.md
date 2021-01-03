@@ -7,7 +7,16 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the *yml and *config file may be used to install only certain pieces of it, such as Filebeat.
 
-  - ![ ](/Ansible/filebeat-playbook.yml)
+  - [Filebeat-playbook.yml](https://github.com/kwekumills/Kweku_Projectassignment/blob/main/Ansible/filebeat-playbook.yml)
+
+  - [elk-playbook.yml](https://github.com/kwekumills/Kweku_Projectassignment/blob/main/Ansible/elk-playbook.yml)
+
+  - [playbook.yml] (https://github.com/kwekumills/Kweku_Projectassignment/blob/main/Ansible/playbook1.yml)
+
+  
+
+
+
 
 This document contains the following details:
 - Description of the Topologu
@@ -77,13 +86,11 @@ The playbook implements the following tasks:
 - download and install a dockervelk container
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![ ](/Images/ScreenShot2021-01-02at12.17.52PM.png)
-
 ![ ](/Images/ScreenShot2021-01-02at11.04.46AM.png)
 
-![](/Images/ScreenShot2021-01-02at11.03.44AM.png)
+![ ](/Images/ScreenShot2021-01-02at11.03.44AM.png)
 
-![](/Images/ScreenShot2021-01-02 at11.03.44AM.png)
+![ ](/Images/ScreenShot2021-01-02at11.03.44AM.png)
 
 
 ### Target Machines & Beats
@@ -92,6 +99,7 @@ This ELK server is configured to monitor the following machines:
 
 1. web1 : 10.0.0.6
 2. web2 : 10.0.0.7
+
 We have installed the following Beats on these machines:
 - Specify which Beats you successfully installed
 1. Elk Server - filebeat
