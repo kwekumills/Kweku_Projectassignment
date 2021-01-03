@@ -132,7 +132,7 @@ All playbooks are .yml files and they are all located in /etc/ansible
 
 In order to make ansible run the playbook on a specific machine, you edit the hosts file located in /etc/ansible/hosts where you'll add the specific machine's IP plus the ansible python interpreter under the specific type of server.
 
-![ ](Images/ScreenShot2021-01-02at12.17.52PM.png)
+![ ](/Images/ScreenShot2021-01-02at12.17.52PM.png)
 
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
