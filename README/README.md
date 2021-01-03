@@ -86,6 +86,7 @@ The playbook implements the following tasks:
 - install docker python module
 - Use more memory
 - download and install a dockervelk container
+
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ![ ](/Images/ScreenShot2021-01-02at11.04.46AM.png)
