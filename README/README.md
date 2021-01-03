@@ -7,7 +7,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the *yml and *config file may be used to install only certain pieces of it, such as Filebeat.
 
-  - filebeat-playbook.yml
+  - ![ ](/Ansible/filebeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topologu
@@ -77,22 +77,26 @@ The playbook implements the following tasks:
 - download and install a dockervelk container
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![](Images/Screen Shot 2021-01-02 at 12.17.52 PM.png)
-![](Images/Screen Shot 2021-01-02 at 11.04.46 AM.png)
-![](Images/Screen Shot 2021-01-02 at 11.03.44 AM.png)
-![](Images/Screen Shot 2021-01-02 at 11.03.44 AM.png)
+![ ](/Images/ScreenShot2021-01-02at12.17.52PM.png)
+
+![ ](/Images/ScreenShot2021-01-02at11.04.46AM.png)
+
+![](/Images/ScreenShot2021-01-02at11.03.44AM.png)
+
+![](/Images/ScreenShot2021-01-02 at11.03.44AM.png)
 
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - List the IP addresses of the machines you are monitoring
-web1 : 10.0.0.6
-web2 : 10.0.0.7
+
+1. web1 : 10.0.0.6
+2. web2 : 10.0.0.7
 We have installed the following Beats on these machines:
 - Specify which Beats you successfully installed
-Elk Server - filebeat
-Web1 - filebeat
-Web2 - filebeat
+1. Elk Server - filebeat
+2. Web1 - filebeat
+3. Web2 - filebeat
 
 These Beats allow us to collect the following information from each machine:
 - In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
@@ -104,17 +108,24 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the filebeat-config.yml file to /etc/filebeat by;
 - Update the filebeat-playbook.yml file to include the following commands;filebeat deb download link to download filebeat, install filebeat deb,enable filebeat system module, and copying filebeat config file to /etc/filebeat
-![](Images/Screen Shot 2021-01-03 at 12.08.10 AM.png)
+
+![ ](/Images/ScreenShot2021-01-03at12.08.10AM.png)
+
 - Run the playbook, and navigate to 52.149.153.246:5601 to check that the installation worked as expected.
-![](Images/Screen Shot 2021-01-03 at 12.15.09 AM.png)
+
+![ ](/Images/ScreenShot2021-01-03at12.15.09AM.png)
 
 Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
+
 All playbooks are .yml files and they are all located in /etc/ansible
+
 - _Which file do you update to make Ansible run the playbook on a specific machine - Host? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+
 In order to make ansible run the playbook on a specific machine, you edit the hosts file located in /etc/ansible/hosts where you'll add the specific machine's IP plus the ansible python interpreter under the specific type of server.
 
 - _Which URL do you navigate to in order to check that the ELK server is running?
+
 http://52.149.153.246:5601
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
