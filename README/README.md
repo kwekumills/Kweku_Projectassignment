@@ -33,6 +33,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 - What aspect of security do load balancers protect? What is the advantage of a jump box?
+
 Load balancers protect servers from attacks such as denial of service which affects availability of servers, they also offer a health probe function to control traffic sent to various machines or servers. 
 The Jump box servers as an administrative server to administrate other servers in the resource group, the jumpbox provides extra hardened security. In this scenario, the only way to get access to the web servers in the red team resource group is through the Jumpbox which isn't easily accessible even with when attackers try to brute force.
 
@@ -142,3 +143,9 @@ In order to make ansible run the playbook on a specific machine, you edit the ho
 http://52.149.153.246:5601
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+
+The screenshot below shows the commands the user will need to run to download playbook, the files, etc
+
+![ ](/Images/ScreenShot2021-01-04at8.49.16PM.png)
+
+After setting up the commands in the playbook yaml file, you run it by using command ansible-playbook followed by the playbook yaml file you just setup eg. after setting up the commands in the filebeat-playbook yaml file, you go ahead and run it by using command ansible-playbook ./filebeat-playbook.yml in the directory the filebeat-playbook.yml file is located 
